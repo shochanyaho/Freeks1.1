@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/kurodashotaro/Desktop/カリキュラム画像/サンプル/3-2.画面から別画面に値を渡す/SpringBootSample3-2"/>
+			<item value="/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/CheckTest1"/>
+			<item value="/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks"/>
+			<item value="/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/CheckTest2"/>
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes

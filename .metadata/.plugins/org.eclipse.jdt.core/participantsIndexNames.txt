@@ -1,0 +1,11 @@
+INDEX VERSION 1.131
+/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4128157897.index
+/JspTest/src/main/java
+/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3953613900.index
+/CheckTest3/src/main/java
+/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3506861113.index
+/JspTest/src/main/java
+/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/280001087.index
+/JspTest/src/main/java
+/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1130287062.index
+/JspTest/src/main/java

@@ -1,0 +1,25 @@
+package com.example.process;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+
+@Controller
+public class processController {
+	
+	@GetMapping("/process")
+	public String getHello() {
+		return "input";
+	}
+	
+	@PostMapping("/process")
+	public String postRequest(@RequestParam("input1") String str, Model model) {
+		
+		model.addAttribute("outputStr",str);
+		
+		return "out/output";
+	}
+}
