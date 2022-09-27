@@ -4165,3 +4165,1875 @@ Binding(COMMAND+-,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-26 22:54:56.200
 !MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.eclipse.ui 4 4 2022-09-27 07:43:05.210
+!MESSAGE Could not create action delegate for id: org.springsource.ide.eclipse.commons.launch.relaunch.action
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2022-09-27 07:43:05.210
+!MESSAGE プラグイン "org.springsource.ide.eclipse.commons.ui" は、クラス "org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate" をインスタンス化できませんでした。
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:126)
+	at org.eclipse.ui.internal.WWinPluginAction.refreshActionList(WWinPluginAction.java:157)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4262)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3885)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:263)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:283)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:389)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:142)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1522)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1545)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1530)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1324)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4310)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3883)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1041)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.<init>(LaunchList.java:74)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.<init>(LiveAndDeadProcessTracker.java:77)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.getInstance(LiveAndDeadProcessTracker.java:69)
+	at org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate.createList(RelaunchProcessPullDownToolbarDelegate.java:29)
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown.<init>(AbstractLaunchToolbarPulldown.java:52)
+	at org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate.<init>(RelaunchProcessPullDownToolbarDelegate.java:15)
+	... 67 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.<init>(LaunchList.java:74)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.<init>(LiveAndDeadProcessTracker.java:77)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.getInstance(LiveAndDeadProcessTracker.java:69)
+	at org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate.createList(RelaunchProcessPullDownToolbarDelegate.java:29)
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown.<init>(AbstractLaunchToolbarPulldown.java:52)
+	at org.springsource.ide.eclipse.commons.ui.launch.RelaunchProcessPullDownToolbarDelegate.<init>(RelaunchProcessPullDownToolbarDelegate.java:15)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:126)
+	at org.eclipse.ui.internal.WWinPluginAction.refreshActionList(WWinPluginAction.java:157)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4262)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3885)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:263)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:283)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:389)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:142)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1522)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1545)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1530)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1324)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4310)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3883)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1041)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui 4 4 2022-09-27 07:43:05.246
+!MESSAGE Could not create action delegate for id: org.springsource.ide.eclipse.commons.launch.stop.action
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2022-09-27 07:43:05.246
+!MESSAGE プラグイン "org.springsource.ide.eclipse.commons.ui" は、クラス "org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate" をインスタンス化できませんでした。
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:126)
+	at org.eclipse.ui.internal.WWinPluginAction.refreshActionList(WWinPluginAction.java:157)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4262)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3885)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:263)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:283)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:389)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:142)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1522)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1545)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1530)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1324)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4310)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3883)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1041)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.<init>(LaunchList.java:74)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.<init>(LiveProcessTracker.java:49)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.getInstance(LiveProcessTracker.java:43)
+	at org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate.createList(StopProcessPullDownToolbarDelegate.java:34)
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown.<init>(AbstractLaunchToolbarPulldown.java:52)
+	at org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate.<init>(StopProcessPullDownToolbarDelegate.java:18)
+	... 67 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.<init>(LaunchList.java:74)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.<init>(LiveProcessTracker.java:49)
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.getInstance(LiveProcessTracker.java:43)
+	at org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate.createList(StopProcessPullDownToolbarDelegate.java:34)
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown.<init>(AbstractLaunchToolbarPulldown.java:52)
+	at org.springsource.ide.eclipse.commons.ui.launch.StopProcessPullDownToolbarDelegate.<init>(StopProcessPullDownToolbarDelegate.java:18)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:126)
+	at org.eclipse.ui.internal.WWinPluginAction.refreshActionList(WWinPluginAction.java:157)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4262)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3885)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:263)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:283)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:317)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:251)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:389)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:142)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1522)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1545)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1530)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1324)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4310)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3883)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1041)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY Activator 4 0 2022-09-27 07:45:18.418
+!MESSAGE NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.livexp.core.LiveSetVariable.getValue()" because the return value of "org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel.access$2(org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel)" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.livexp.core.LiveSetVariable.getValue()" because the return value of "org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel.access$2(org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel)" is null
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel$2.bundleChanged(LocalBootDashModel.java:153)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:935)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:38.324
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:38.325
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:38.326
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample-1 false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:38.326
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:39.978
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:39.979
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:39.981
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:39.982
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample-1 false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:39.983
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:39.985
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:39.986
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample-1 false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:39.987
+!MESSAGE executing callback sts4.classpath.PRULthes 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:40.085
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:41.499
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:41.501
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:41.502
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample-1 false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:41.503
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:41.513
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:42.609
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:42.611
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:42.612
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample-1 false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:42.613
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:42.623
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:43.520
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:43.522
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:43.524
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample-1 false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:43.524
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:43.548
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:44.409
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:44.414
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:44.415
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample-1 false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:44.415
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:45:44.441
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:46:25.469
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:46:25.473
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:46:25.474
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample-1 false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:46:25.474
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 07:46:25.487
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 07:54:15.126
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 07:54:15.133
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 07:54:15.135
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 07:54:15.135
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 07:54:19.918
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.remove(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processTerminated(LiveProcessTracker.java:64)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:91)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 07:54:19.919
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.remove(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processTerminated(LiveProcessTracker.java:64)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:91)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 07:54:28.892
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.remove(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processTerminated(LiveProcessTracker.java:64)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:91)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 07:54:28.893
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.remove(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processTerminated(LiveProcessTracker.java:64)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:91)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 07:54:44.868
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 07:54:44.872
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 07:54:44.873
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 07:54:44.873
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY mergedoc.encoding 2 0 2022-09-27 21:53:44.231
+!MESSAGE リソース '/SpringBootSample-1/src/main/resources/templates/hello/hello.html' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-09-27 21:53:44.233
+!MESSAGE リソース '/SpringBootSample-1/src/main/resources/templates/hello/hello.html' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-09-27 21:53:44.241
+!MESSAGE リソース '/SpringBootSample-1/src/main/resources/templates/hello/hello.html' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-09-27 21:53:44.242
+!MESSAGE リソース '/SpringBootSample-1/src/main/resources/templates/hello/hello.html' が存在しません。
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 21:54:31.286
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 21:54:31.287
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 21:54:31.287
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 21:54:31.294
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 21:54:31.742
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4893)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.SWT.error(SWT.java:4779)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:810)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:597)
+	at org.eclipse.swt.widgets.Tree.getSelection(Tree.java:1848)
+	at org.eclipse.jface.viewers.TreeViewer.getSelection(TreeViewer.java:231)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSelection(AbstractTreeViewer.java:2986)
+	at com.eclipserunner.views.impl.RunnerViewSelection.getSelection(RunnerViewSelection.java:111)
+	at com.eclipserunner.views.impl.RunnerViewSelection.firstNodeHasType(RunnerViewSelection.java:40)
+	at com.eclipserunner.views.impl.RunnerView.getLaunchNode(RunnerView.java:459)
+	at com.eclipserunner.views.impl.RunnerView.updateRunMenu(RunnerView.java:585)
+	at com.eclipserunner.views.impl.RunnerView.modelChanged(RunnerView.java:522)
+	at com.eclipserunner.model.impl.RunnerModel.fireModelChangedEvent(RunnerModel.java:110)
+	at com.eclipserunner.model.impl.RunnerModel.categoryNodeChanged(RunnerModel.java:130)
+	at com.eclipserunner.model.impl.CategoryNode.fireCategoryNodeChangedEvent(CategoryNode.java:94)
+	at com.eclipserunner.model.impl.CategoryNode.remove(CategoryNode.java:74)
+	at com.eclipserunner.model.impl.RunnerModel.removeLaunchNode(RunnerModel.java:71)
+	at com.eclipserunner.model.common.RunnerModelDelegatingDecorator.removeLaunchNode(RunnerModelDelegatingDecorator.java:49)
+	at com.eclipserunner.model.adapters.RunnerModelLaunchConfigurationListenerAdapter.launchConfigurationRemoved(RunnerModelLaunchConfigurationListenerAdapter.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:222)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationDeleted(LaunchManager.java:2150)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.delete(LaunchConfiguration.java:336)
+	at org.springframework.ide.eclipse.boot.launch.util.BootLaunchConfDeleter$2.run(BootLaunchConfDeleter.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 120 2022-09-27 21:54:31.845
+!MESSAGE 起動構成変更通知中に例外が発生しました。
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4893)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.SWT.error(SWT.java:4779)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:810)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:597)
+	at org.eclipse.swt.widgets.Tree.getSelection(Tree.java:1848)
+	at org.eclipse.jface.viewers.TreeViewer.getSelection(TreeViewer.java:231)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSelection(AbstractTreeViewer.java:2986)
+	at com.eclipserunner.views.impl.RunnerViewSelection.getSelection(RunnerViewSelection.java:111)
+	at com.eclipserunner.views.impl.RunnerViewSelection.firstNodeHasType(RunnerViewSelection.java:40)
+	at com.eclipserunner.views.impl.RunnerView.getLaunchNode(RunnerView.java:459)
+	at com.eclipserunner.views.impl.RunnerView.updateRunMenu(RunnerView.java:585)
+	at com.eclipserunner.views.impl.RunnerView.modelChanged(RunnerView.java:522)
+	at com.eclipserunner.model.impl.RunnerModel.fireModelChangedEvent(RunnerModel.java:110)
+	at com.eclipserunner.model.impl.RunnerModel.categoryNodeChanged(RunnerModel.java:130)
+	at com.eclipserunner.model.impl.CategoryNode.fireCategoryNodeChangedEvent(CategoryNode.java:94)
+	at com.eclipserunner.model.impl.CategoryNode.remove(CategoryNode.java:74)
+	at com.eclipserunner.model.impl.RunnerModel.removeLaunchNode(RunnerModel.java:71)
+	at com.eclipserunner.model.common.RunnerModelDelegatingDecorator.removeLaunchNode(RunnerModelDelegatingDecorator.java:49)
+	at com.eclipserunner.model.adapters.RunnerModelLaunchConfigurationListenerAdapter.launchConfigurationRemoved(RunnerModelLaunchConfigurationListenerAdapter.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:222)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationDeleted(LaunchManager.java:2150)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.delete(LaunchConfiguration.java:336)
+	at org.springframework.ide.eclipse.boot.launch.util.BootLaunchConfDeleter$2.run(BootLaunchConfDeleter.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 21:54:31.864
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4893)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.SWT.error(SWT.java:4779)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:810)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:597)
+	at org.eclipse.swt.widgets.Tree.getSelection(Tree.java:1848)
+	at org.eclipse.jface.viewers.TreeViewer.getSelection(TreeViewer.java:231)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSelection(AbstractTreeViewer.java:2986)
+	at com.eclipserunner.views.impl.RunnerViewSelection.getSelection(RunnerViewSelection.java:111)
+	at com.eclipserunner.views.impl.RunnerViewSelection.firstNodeHasType(RunnerViewSelection.java:40)
+	at com.eclipserunner.views.impl.RunnerView.getLaunchNode(RunnerView.java:459)
+	at com.eclipserunner.views.impl.RunnerView.updateRunMenu(RunnerView.java:585)
+	at com.eclipserunner.views.impl.RunnerView.modelChanged(RunnerView.java:522)
+	at com.eclipserunner.model.impl.RunnerModel.fireModelChangedEvent(RunnerModel.java:110)
+	at com.eclipserunner.model.impl.RunnerModel.categoryNodeChanged(RunnerModel.java:130)
+	at com.eclipserunner.model.impl.CategoryNode.fireCategoryNodeChangedEvent(CategoryNode.java:94)
+	at com.eclipserunner.model.impl.CategoryNode.remove(CategoryNode.java:74)
+	at com.eclipserunner.model.impl.RunnerModel.removeLaunchNode(RunnerModel.java:71)
+	at com.eclipserunner.model.common.RunnerModelDelegatingDecorator.removeLaunchNode(RunnerModelDelegatingDecorator.java:49)
+	at com.eclipserunner.model.adapters.RunnerModelLaunchConfigurationListenerAdapter.launchConfigurationRemoved(RunnerModelLaunchConfigurationListenerAdapter.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:222)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationDeleted(LaunchManager.java:2150)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.delete(LaunchConfiguration.java:336)
+	at org.springframework.ide.eclipse.boot.launch.util.BootLaunchConfDeleter$2.run(BootLaunchConfDeleter.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 120 2022-09-27 21:54:31.864
+!MESSAGE 起動構成変更通知中に例外が発生しました。
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4893)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.SWT.error(SWT.java:4779)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:810)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:597)
+	at org.eclipse.swt.widgets.Tree.getSelection(Tree.java:1848)
+	at org.eclipse.jface.viewers.TreeViewer.getSelection(TreeViewer.java:231)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSelection(AbstractTreeViewer.java:2986)
+	at com.eclipserunner.views.impl.RunnerViewSelection.getSelection(RunnerViewSelection.java:111)
+	at com.eclipserunner.views.impl.RunnerViewSelection.firstNodeHasType(RunnerViewSelection.java:40)
+	at com.eclipserunner.views.impl.RunnerView.getLaunchNode(RunnerView.java:459)
+	at com.eclipserunner.views.impl.RunnerView.updateRunMenu(RunnerView.java:585)
+	at com.eclipserunner.views.impl.RunnerView.modelChanged(RunnerView.java:522)
+	at com.eclipserunner.model.impl.RunnerModel.fireModelChangedEvent(RunnerModel.java:110)
+	at com.eclipserunner.model.impl.RunnerModel.categoryNodeChanged(RunnerModel.java:130)
+	at com.eclipserunner.model.impl.CategoryNode.fireCategoryNodeChangedEvent(CategoryNode.java:94)
+	at com.eclipserunner.model.impl.CategoryNode.remove(CategoryNode.java:74)
+	at com.eclipserunner.model.impl.RunnerModel.removeLaunchNode(RunnerModel.java:71)
+	at com.eclipserunner.model.common.RunnerModelDelegatingDecorator.removeLaunchNode(RunnerModelDelegatingDecorator.java:49)
+	at com.eclipserunner.model.adapters.RunnerModelLaunchConfigurationListenerAdapter.launchConfigurationRemoved(RunnerModelLaunchConfigurationListenerAdapter.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:222)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationDeleted(LaunchManager.java:2150)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.delete(LaunchConfiguration.java:336)
+	at org.springframework.ide.eclipse.boot.launch.util.BootLaunchConfDeleter$2.run(BootLaunchConfDeleter.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 21:54:55.317
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 21:54:55.318
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 21:54:55.319
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 21:54:55.319
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 21:54:58.715
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.remove(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processTerminated(LiveProcessTracker.java:64)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:91)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 21:54:58.716
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.remove(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processTerminated(LiveProcessTracker.java:64)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:91)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 21:55:20.507
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.remove(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processTerminated(LiveProcessTracker.java:64)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:91)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 21:55:20.507
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.remove(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processTerminated(LiveProcessTracker.java:64)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:91)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 21:55:28.254
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 21:55:28.256
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 21:55:28.256
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 21:55:28.257
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:01:52.553
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:01:52.554
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample-1 true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:01:52.555
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:01:52.560
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY mergedoc.encoding 2 0 2022-09-27 22:01:52.574
+!MESSAGE リソース '/SpringBootSample-1/src/main/java/com/example/hello/HelloController.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-09-27 22:01:52.574
+!MESSAGE リソース '/SpringBootSample-1/src/main/java/com/example/hello/HelloController.java' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-09-27 22:01:52.704
+!MESSAGE リソース '/SpringBootSample-1/src/main/resources/templates/hello/hello.html' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2022-09-27 22:01:52.705
+!MESSAGE リソース '/SpringBootSample-1/src/main/resources/templates/hello/hello.html' が存在しません。
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 22:01:53.245
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4893)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.SWT.error(SWT.java:4779)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:810)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:597)
+	at org.eclipse.swt.widgets.Tree.getSelection(Tree.java:1848)
+	at org.eclipse.jface.viewers.TreeViewer.getSelection(TreeViewer.java:231)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSelection(AbstractTreeViewer.java:2986)
+	at com.eclipserunner.views.impl.RunnerViewSelection.getSelection(RunnerViewSelection.java:111)
+	at com.eclipserunner.views.impl.RunnerViewSelection.firstNodeHasType(RunnerViewSelection.java:40)
+	at com.eclipserunner.views.impl.RunnerView.getLaunchNode(RunnerView.java:459)
+	at com.eclipserunner.views.impl.RunnerView.updateRunMenu(RunnerView.java:585)
+	at com.eclipserunner.views.impl.RunnerView.modelChanged(RunnerView.java:522)
+	at com.eclipserunner.model.impl.RunnerModel.fireModelChangedEvent(RunnerModel.java:110)
+	at com.eclipserunner.model.impl.RunnerModel.categoryNodeChanged(RunnerModel.java:130)
+	at com.eclipserunner.model.impl.CategoryNode.fireCategoryNodeChangedEvent(CategoryNode.java:94)
+	at com.eclipserunner.model.impl.CategoryNode.remove(CategoryNode.java:74)
+	at com.eclipserunner.model.impl.RunnerModel.removeLaunchNode(RunnerModel.java:71)
+	at com.eclipserunner.model.common.RunnerModelDelegatingDecorator.removeLaunchNode(RunnerModelDelegatingDecorator.java:49)
+	at com.eclipserunner.model.adapters.RunnerModelLaunchConfigurationListenerAdapter.launchConfigurationRemoved(RunnerModelLaunchConfigurationListenerAdapter.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:222)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationDeleted(LaunchManager.java:2150)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.delete(LaunchConfiguration.java:336)
+	at org.springframework.ide.eclipse.boot.launch.util.BootLaunchConfDeleter$2.run(BootLaunchConfDeleter.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 120 2022-09-27 22:01:53.246
+!MESSAGE 起動構成変更通知中に例外が発生しました。
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4893)
+	at org.eclipse.swt.SWT.error(SWT.java:4808)
+	at org.eclipse.swt.SWT.error(SWT.java:4779)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:810)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:597)
+	at org.eclipse.swt.widgets.Tree.getSelection(Tree.java:1848)
+	at org.eclipse.jface.viewers.TreeViewer.getSelection(TreeViewer.java:231)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSelection(AbstractTreeViewer.java:2986)
+	at com.eclipserunner.views.impl.RunnerViewSelection.getSelection(RunnerViewSelection.java:111)
+	at com.eclipserunner.views.impl.RunnerViewSelection.firstNodeHasType(RunnerViewSelection.java:40)
+	at com.eclipserunner.views.impl.RunnerView.getLaunchNode(RunnerView.java:459)
+	at com.eclipserunner.views.impl.RunnerView.updateRunMenu(RunnerView.java:585)
+	at com.eclipserunner.views.impl.RunnerView.modelChanged(RunnerView.java:522)
+	at com.eclipserunner.model.impl.RunnerModel.fireModelChangedEvent(RunnerModel.java:110)
+	at com.eclipserunner.model.impl.RunnerModel.categoryNodeChanged(RunnerModel.java:130)
+	at com.eclipserunner.model.impl.CategoryNode.fireCategoryNodeChangedEvent(CategoryNode.java:94)
+	at com.eclipserunner.model.impl.CategoryNode.remove(CategoryNode.java:74)
+	at com.eclipserunner.model.impl.RunnerModel.removeLaunchNode(RunnerModel.java:71)
+	at com.eclipserunner.model.common.RunnerModelDelegatingDecorator.removeLaunchNode(RunnerModelDelegatingDecorator.java:49)
+	at com.eclipserunner.model.adapters.RunnerModelLaunchConfigurationListenerAdapter.launchConfigurationRemoved(RunnerModelLaunchConfigurationListenerAdapter.java:52)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:222)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209)
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationDeleted(LaunchManager.java:2150)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.delete(LaunchConfiguration.java:336)
+	at org.springframework.ide.eclipse.boot.launch.util.BootLaunchConfDeleter$2.run(BootLaunchConfDeleter.java:70)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.416
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.417
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.418
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.418
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.419
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.419
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.420
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.420
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.519
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.519
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.520
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.520
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.521
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.521
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.521
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.521
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.680
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.680
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.681
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.681
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.682
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.682
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.683
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.683
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.684
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.684
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.685
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.685
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.686
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.686
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.687
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.687
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.689
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.689
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.691
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.691
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:53.692
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:53.692
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.030
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.030
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.030
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.030
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.031
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.031
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.031
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.031
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.032
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.032
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.033
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.033
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.033
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.033
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.034
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.034
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.035
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.035
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.036
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.036
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.037
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.037
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.038
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.039
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.040
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.040
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.042
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.042
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:01:54.043
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.matchFound(ConsoleLineNotifier.java:115)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:137)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:01:54.043
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY Activator 4 0 2022-09-27 22:02:08.525
+!MESSAGE DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getAttribute(LaunchConfiguration.java:414)
+	at org.springframework.ide.eclipse.boot.launch.devtools.BootDevtoolsClientLaunchConfigurationDelegate.isManaged(BootDevtoolsClientLaunchConfigurationDelegate.java:281)
+	at org.springframework.ide.eclipse.boot.dash.devtools.DevtoolsUtil$1.deleteConf(DevtoolsUtil.java:283)
+	at org.springframework.ide.eclipse.boot.dash.devtools.DevtoolsUtil$1.processTerminated(DevtoolsUtil.java:278)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.processTerminated(ProcessTracker.java:112)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.handleDebugEvent(ProcessTracker.java:78)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker$1.handleDebugEvents(ProcessTracker.java:48)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:02:08.525
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 22:02:08.530
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.remove(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processTerminated(LiveProcessTracker.java:64)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:91)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 22:02:08.531
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.remove(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processTerminated(LiveProcessTracker.java:64)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:91)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-27 22:02:08.533
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+!STACK 1
+org.eclipse.debug.core.DebugException: file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+	at org.eclipse.debug.internal.core.LaunchManager.createDebugException(LaunchManager.java:885)
+	at org.eclipse.debug.internal.core.LaunchManager.getInfo(LaunchManager.java:1368)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getInfo(LaunchConfiguration.java:488)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getType(LaunchConfiguration.java:643)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.isMavenProcess(MavenConsoleLineTracker.java:144)
+	at org.eclipse.m2e.internal.launch.MavenConsoleLineTracker.lineAppended(MavenConsoleLineTracker.java:87)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.lineAppended(ConsoleLineNotifier.java:123)
+	at org.eclipse.debug.internal.ui.views.console.ConsoleLineNotifier.disconnect(ConsoleLineNotifier.java:71)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$CompiledPatternMatchListener.dispose(ConsolePatternMatcher.java:198)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher.disconnect(ConsolePatternMatcher.java:260)
+	at org.eclipse.ui.internal.console.ConsolePatternMatcher$MatchJob.run(ConsolePatternMatcher.java:164)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.debug.core 4 5012 2022-09-27 22:02:08.533
+!MESSAGE file:/Users/kurodashotaro/Desktop/Self_study/java_shochan.java/Freeks/.metadata/.plugins/org.eclipse.debug.core/.launches/SpringBootSample-1%20-%20SpringBootSample1Application.launch に起動構成 SpringBootSample-1 - SpringBootSample1Application が存在しません。
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:50.818
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:50.819
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:50.820
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:50.820
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:50.828
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:51.536
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:51.541
+!MESSAGE classpath=81 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:51.543
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample false 81
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:51.543
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:51.647
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:52.139
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:52.141
+!MESSAGE classpath=81 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:52.142
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample false 81
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:52.143
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:52.160
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:53.416
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:53.419
+!MESSAGE classpath=81 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:53.420
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample false 81
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:53.420
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:53.438
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:54.425
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:54.427
+!MESSAGE classpath=81 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:54.428
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample false 81
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:54.429
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:54.444
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:55.197
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:55.199
+!MESSAGE classpath=81 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:55.200
+!MESSAGE buffering callback sts4.classpath.PRULthes SpringBootSample false 81
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:55.201
+!MESSAGE executing callback sts4.classpath.PRULthes 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-09-27 22:04:55.212
+!MESSAGE executing callback sts4.classpath.PRULthes SUCCESS [done]
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 22:10:50.609
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 22:10:50.612
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedHashMap.remove(Object)" because "this.configs" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveAndDeadProcessTracker.processCreated(LiveAndDeadProcessTracker.java:94)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2022-09-27 22:10:50.613
+!MESSAGE プラグイン "org.eclipse.debug.core" からのコードの起動で問題が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 125 2022-09-27 22:10:50.613
+!MESSAGE デバッグ・イベントのディスパッチ中に例外が発生しました。
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.util.LinkedList.contains(Object)" because "this.processes" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.LiveProcessTracker.processCreated(LiveProcessTracker.java:75)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList.handleDebugEvent(LaunchList.java:86)
+	at org.springsource.ide.eclipse.commons.ui.launch.LaunchList$1.handleDebugEvents(LaunchList.java:63)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.sse.ui 2 0 2022-09-27 22:20:03.387
+!MESSAGE The ''Thymeleaf Processor Proposal Computer'' proposal computer from the ''org.thymeleaf.extras.eclipse.contentassist'' plug-in did not complete normally. 拡張が実行時例外をスローしました。
+!STACK 0
+groovy.lang.GroovyRuntimeException: Could not find matching constructor for: org.thymeleaf.extras.eclipse.contentassist.autocomplete.proposals.AttributeProcessorCompletionProposal(org.thymeleaf.extras.eclipse.dialect.xml.ElementProcessor, Integer, Integer, Boolean)
+	at groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1845)
+	at groovy.lang.MetaClassImpl.invokeConstructor(MetaClassImpl.java:1615)
+	at org.codehaus.groovy.runtime.callsite.MetaClassConstructorSite.callConstructor(MetaClassConstructorSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:304)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.AttributeProcessorProposalGenerator.createAttributeProcessorSuggestions(AttributeProcessorProposalGenerator.groovy:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:149)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:100)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.AttributeProcessorProposalGenerator.computeAttributeProcessorSuggestions(AttributeProcessorProposalGenerator.groovy:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.AttributeProcessorProposalGenerator.generateProposals(AttributeProcessorProposalGenerator.groovy:160)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.AttributeProcessorProposalGenerator$generateProposals.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.generators.ElementProcessorProposalGenerator$generateProposals.call(Unknown Source)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.CompletionProposalComputer$_computeCompletionProposals_closure1.doCall(CompletionProposalComputer.groovy:68)
+	at jdk.internal.reflect.GeneratedMethodAccessor214.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.inject(DefaultGroovyMethods.java:6212)
+	at org.codehaus.groovy.runtime.DefaultGroovyMethods.inject(DefaultGroovyMethods.java:6153)
+	at org.codehaus.groovy.runtime.dgm$424.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:247)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at org.thymeleaf.extras.eclipse.contentassist.autocomplete.CompletionProposalComputer.computeCompletionProposals(CompletionProposalComputer.groovy:67)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:290)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:292)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.collectProposals(StructuredContentAssistProcessor.java:486)
+	at org.eclipse.wst.sse.ui.contentassist.StructuredContentAssistProcessor.computeCompletionProposals(StructuredContentAssistProcessor.java:257)
+	at org.eclipse.wst.sse.ui.internal.contentassist.CompoundContentAssistProcessor.computeCompletionProposals(CompoundContentAssistProcessor.java:129)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2022)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4905)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2021)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2018)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:577)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:507)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:502)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:373)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4262)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3885)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1041)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
